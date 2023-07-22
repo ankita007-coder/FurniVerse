@@ -20,9 +20,8 @@ const cart_reducer = (state, action) => {
             newAmount = item.max
           }
           return {...item,amount:newAmount}
-        }else{
-          return item
         }
+          return item
       })
       return {...state, cart:[tempCart]}
     }
